@@ -83,6 +83,7 @@ class Streamlink:
             "ffmpeg-ffmpeg": None,
             "ffmpeg-no-validation": False,
             "ffmpeg-fout": None,
+            "ffmpeg-dkey": None,
             "ffmpeg-video-transcode": None,
             "ffmpeg-audio-transcode": None,
             "ffmpeg-copyts": False,
@@ -191,6 +192,8 @@ class Streamlink:
                                  e.g. ``aac``
 
         ffmpeg-copyts            (bool) When used with ffmpeg, do not shift input timestamps.
+        
+        ffmpeg-dkey              (str) Specify decryption key
 
         ffmpeg-start-at-zero     (bool) When used with ffmpeg and copyts,
                                  shift input timestamps, so they start at zero
