@@ -171,9 +171,8 @@ class FFMPEGMuxer(StreamIO):
         start_at_zero = session.options.get("ffmpeg-start-at-zero") or options.pop("start_at_zero", False)
         dkey = session.options.get("ffmpeg-dkey") or options.pop("dkey", False)
 
-        self._cmd.extend(['-thread_queue_size', '32768'])
-        if dkey:
-            self._cmd.extend(['-decryption_key', dkey])
+        self._cmd.extend(['-decryption_key', dkey])
+
         
         self._cmd = [self.command(session), '-nostats', '-y']
         for np in self.pipes:
