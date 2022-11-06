@@ -175,7 +175,7 @@ class FFMPEGMuxer(StreamIO):
         for np in self.pipes:
             self._cmd.extend(['-thread_queue_size', '32768'])
             if dkey:
-                self._cmd.extend(['-decryption_key', 'dkey'])
+                self._cmd.extend(['-decryption_key', dkey])
             self._cmd.extend(["-i", str(np.path)])
 
         self._cmd.extend(['-c:v', videocodec])
