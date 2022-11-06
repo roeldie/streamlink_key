@@ -2,7 +2,13 @@
 
 [![Github build status][workflow-status-badge]][workflow-status]
 [![codecov.io][codecov-coverage-badge]][codecov-coverage] [![Backers on Open Collective][opencollective-backers-badge]](#backers) [![Sponsors on Open Collective][opencollective-sponsors-badge]](#sponsors)
+**Fork of Streamlink which includes the option to specify a decryption key. Tested on DASH Live Stream encryption.**  
 
+**e.g streamlink urlofmpd best -o "C:\Users\User\Downloads\test.mkv" --ffmpeg-dkey "03de....."**  
+
+**--ffmpeg-dkey**
+
+## 
 Streamlink is a CLI utility which pipes video streams from various services into a video player, such as VLC.
 
 The main purpose of streamlink is to avoid resource-heavy and unoptimized websites, while still allowing the user to enjoy various streamed content.
