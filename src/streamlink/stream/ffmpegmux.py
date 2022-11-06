@@ -172,10 +172,9 @@ class FFMPEGMuxer(StreamIO):
         dkey = session.options.get("ffmpeg-dkey") or options.pop("dkey", False)
 
 
+
         if dkey:
             self._cmd.extend(['-decryption_key', dkey])
-        self._cmd.extend(["-i", str(np.path)])
-
 
         self._cmd = [self.command(session), '-nostats', '-y']
         for np in self.pipes:
