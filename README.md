@@ -52,11 +52,5 @@ The default behavior of Streamlink is to play back streams in the VLC player.
 For more in-depth usage and install instructions, please refer to the [detailed documentation][streamlink-documentation].
 
 
-# Contributing
 
-All contributions are welcome.
-Feel free to open a new thread on the issue tracker or submit a new pull request.
-Please read [CONTRIBUTING.md][contributing] first. Thanks!
-
-[![Contributors][opencollective-contributors]][contributors]
 
